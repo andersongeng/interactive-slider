@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.slider--card {
+    height: 100%;
+    max-height: 200px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    scroll-snap-align: start;
+}
+
+.slider--one {
+    background-color: bisque;
+}
+
+.slider--two {
+    background-color: aquamarine !important;
+}
+
+.slider--three {
+    background-color: cyan;
+}
